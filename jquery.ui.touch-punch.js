@@ -1,5 +1,6 @@
 /*!
- * jQuery UI Touch Punch 0.2.3
+ * jQuery UI Touch Punch 
+ * forked from original version 0.2.3
  *
  * Copyright 2011–2014, Dave Furfero
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -7,6 +8,8 @@
  * Depends:
  *  jquery.ui.widget.js
  *  jquery.ui.mouse.js
+ *
+ * Fork by Isg-Software, version 0.2.4
  */
 (function ($) {
 
@@ -90,6 +93,7 @@
 
     // Simulate the mousedown event
     simulateMouseEvent(event, 'mousedown');
+    event.stopPropagation();
   };
 
   /**
@@ -108,6 +112,7 @@
 
     // Simulate the mousemove event
     simulateMouseEvent(event, 'mousemove');
+    event.stopPropagation();
   };
 
   /**

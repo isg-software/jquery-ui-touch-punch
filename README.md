@@ -1,4 +1,14 @@
 # jQuery UI Touch Punch
+
+## Fork
+
+This is a fork of the [original project](https://github.com/furf/jquery-ui-touch-punch) created mainly for personal purposes.
+
+Modifications:
+
+1. Touch events should not bubble.
+	(I have a website where, on a mobile phone, a swipe to the right will drag open an overlay menu. But if the swipe starts on a jQuery UI control like a slider, this gesture should really _only_ move the slider and not start opening the menu as well.)
+
 ## Touch Event Support for jQuery UI
 
 > **jQuery UI Touch Punch is a small hack that enables the use of touch events on sites using the jQuery UI user interface library.**
@@ -39,3 +49,5 @@ Just follow these simple steps to enable touch events in your jQuery UI app:
     ```
 
 _Tested on iPad, iPhone, Android and other touch-enabled mobile devices._
+
+_(This fork is only tested on iPad and iPhone as well as with developer tools in a Chromium desktop browser like Chrome or Opera.)_
